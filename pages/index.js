@@ -1,10 +1,25 @@
+import { getJsonData } from '../utils/tool';
+import CarrouselComp from '../components/ui/carrousel'
 
-const Home = () => {
+const Home = ({data}) => {
   return (
-    <div>
-      home
-    </div>
+    <>
+      <CarrouselComp data={data.carrousel}/>
+    </>
   )
 }
+
+
+export const getStaticProps = async() => {
+  const data = await getJsonData();
+
+  return{
+    props:{
+        data:data
+    }
+  }
+}
+
+
 
 export default Home;
