@@ -5,6 +5,9 @@ import Head from "next/head";
 const BioPage = ({ bioData }) => {
   return (
     <div className="row">
+        <Head>
+            <meta name="description" content="Biography of hokusai" />
+        </Head>
       <div className="col-lg-8">
         <article>
           <div className="mb-4">
