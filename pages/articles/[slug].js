@@ -3,8 +3,6 @@ import Image from 'next/image'
 
 const ArticlePage = ({data}) => {
 
-    console.log(data)
-
     return(
         <div>
             <Image
